@@ -1,0 +1,23 @@
+.nav-wrapper {
+    @apply bg-gray-800 border-gray-200 px-2 py-2.5
+}
+
+.nav-container {
+    @apply container flex flex-wrap justify-between items-center mx-auto
+}
+
+.menu-item-wrapper {
+    @apply flex flex-row font-semibold text-xs space-x-8 mt-0
+}
+
+.menu-item {
+    @apply block cursor-pointer border-0 py-2 pr-4 pl-3 text-gray-400
+}
+
+.menu-item:hover {
+    @apply text-blue-700
+}
+
+.span-style {
+    @apply self-center text-xl font-semibold whitespace-nowrap text-white  mt-2
+}

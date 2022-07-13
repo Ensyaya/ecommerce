@@ -1,0 +1,11 @@
+.card-wrapper {
+    @apply max-w-sm rounded overflow-hidden shadow-md cursor-pointer 
+}
+
+.card-wrapper:hover {
+    @apply shadow-lg scale-105 transition-all
+}
+
+.span-style {
+    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2
+}
