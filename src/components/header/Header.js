@@ -10,7 +10,7 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png"
             alt="ford"
-            className="mr-3 h-8"
+            className="mr-3 h-10"
           />
           <span className="span-style">eCommerce</span>
         </div>

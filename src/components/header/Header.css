@@ -19,5 +19,5 @@
 }
 
 .span-style {
-    @apply self-center text-xl font-semibold whitespace-nowrap text-white  mt-2
+    @apply inline-block bg-gray-400 self-center text-xl font-semibold px-2 py-1 rounded-full text-white
 }

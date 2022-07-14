@@ -4,16 +4,19 @@ function Footer() {
   return (
     <footer className="p-4 bg-gray-900 shadow md:px-6 md:py-8 dark:bg-gray-900">
       <div className="sm:flex sm:items-center sm:justify-between">
-        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png"
-            className="mr-3 h-8"
-            alt="eCommerce logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+        <div  className="flex items-center mb-4 sm:mb-0">
+          <a href="/#">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png"
+              className="mr-3 h-10"
+              alt="eCommerce logo"
+            />
+          </a>
+          <span className="inline-block bg-gray-400 self-center text-xl font-semibold px-2 py-1 rounded-full text-white ">
             eCommerce
           </span>
-        </a>
+        </div>
+
         <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
           <li>
             <a href="/#" className="mr-4 hover:underline md:mr-6 ">

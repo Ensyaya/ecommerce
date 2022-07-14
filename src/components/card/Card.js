@@ -22,7 +22,7 @@ function Card({ item }) {
         )}
       </div>
       <div className="px-6 pt-4 animate-pulse">
-        <span className="span-style">{item.price} TL</span>
+        <span className="card-span-style">{item.price} TL</span>
       </div>
     </div>
   );
