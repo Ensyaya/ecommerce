@@ -1,5 +1,5 @@
 .card-wrapper {
-    @apply max-w-sm rounded overflow-hidden shadow-md cursor-pointer 
+    @apply max-w-sm rounded min-h-full overflow-hidden shadow-md cursor-auto ;
 }
 
 .card-wrapper:hover {
@@ -7,5 +7,5 @@
 }
 
 .span-style {
-    @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2
+    @apply  inline-block bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
 }
