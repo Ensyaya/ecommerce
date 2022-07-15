@@ -23,19 +23,19 @@ function Footer() {
             <div className="mr-6 ">Contact</div>
           </li>
           <li>
-            <a href="/#" className="mr-4 hover:underline md:mr-6">
-              <SocialIcon network="instagram" />
-            </a>
+            <div className="mr-4 hover:underline md:mr-6">
+              <SocialIcon network="instagram" url="/#" />
+            </div>
           </li>
           <li>
-            <a href="/#" className="mr-4 hover:underline md:mr-6 ">
-              <SocialIcon network="twitter" />
-            </a>
+            <div className="mr-4 hover:underline md:mr-6 ">
+              <SocialIcon network="twitter" url="/#" />
+            </div>
           </li>
           <li>
-            <a href="/#" className="hover:underline">
-              <SocialIcon network="whatsapp" />
-            </a>
+            <div className="hover:underline">
+              <SocialIcon network="whatsapp" url="/#" />
+            </div>
           </li>
         </ul>
       </div>
