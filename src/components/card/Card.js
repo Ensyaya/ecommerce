@@ -1,30 +1,24 @@
-import React, { useState } from "react";
-import "./Card.css";
+import React from "react";
+import { useQuery } from "react-query";
+import CardItem from "./CardItem";
 
-function Card({ item }) {
-  const [isOpen, setIsOpen] = useState(false);
+function Card() {
+  const { isLoading, error, data } = useQuery("repoData", () =>
+    fetch("https://fakestoreapi.com/products").then((res) => res.json())
+  );
+
+  if (isLoading) return <div className="h-screen">Loading...</div>;
+
+  if (error) return "An error has occurred: " + error.message;
 
   return (
-    <div
-      className="card-wrapper mb-5 bg-white "
-      onClick={() => setIsOpen(!isOpen)}
-    >
-      <img
-        className="object-contain  h-48 w-96"
-        src={item.image}
-        alt="Country"
-      />
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{item.title}</div>
-        <p className="text-gray-700 text-base">{item.category}</p>
-        {isOpen && (
-          <p className="text-gray-700 text-base">{item.description}</p>
-        )}
+    <main>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        {data.map((item, key) => (
+          <CardItem key={key} item={item} />
+        ))}
       </div>
-      <div className="px-6 pt-4 animate-pulse">
-        <span className="card-span-style">{item.price} TL</span>
-      </div>
-    </div>
+    </main>
   );
 }
 
