@@ -1,7 +1,6 @@
 // import axios from "axios";
 
 import Card from "./components/card/Card";
-// import CardItem from "./components/card/CardItem";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 

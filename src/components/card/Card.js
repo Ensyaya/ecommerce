@@ -1,6 +1,6 @@
 import React from "react";
 import { useQuery } from "react-query";
-import CardItem from "./CardItem";
+import AnimationCard from "./AnimationCard";
 
 function Card() {
   const { isLoading, error, data } = useQuery("repoData", () =>
@@ -15,7 +15,7 @@ function Card() {
     <main>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {data.map((item, key) => (
-          <CardItem key={key} item={item} />
+          <AnimationCard key={key} item={item} />
         ))}
       </div>
     </main>

@@ -1,0 +1,53 @@
+.modal {
+  font-size: 12px;
+}
+
+.modal>.header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal>.content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal>.actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal>.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.card-wrapper {
+  @apply max-w-sm rounded min-h-full overflow-hidden shadow-md cursor-auto;
+}
+
+.card-wrapper:hover {
+  @apply shadow-lg scale-105 transition-all
+}
+
+.card-span-style {
+  @apply inline-block bg-gray-700 rounded-full px-3 py-1 text-xl font-semibold text-white mr-2 mb-2;
+}
+
+.animation-card-span-style {
+  @apply inline-block bg-gray-700 rounded-full px-3 py-1 text-xl font-semibold text-white mr-2 mb-2;
+}
